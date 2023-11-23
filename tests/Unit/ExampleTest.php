@@ -19,18 +19,18 @@ class ExampleTest extends TestCase
     public function testSuma()
     {  
         $resultado = (new \App\Http\Controllers\Controller)->suma(3, 5);
-        $this->assertEquals(7, $resultado);
+        $this->assertEquals(8, $resultado);
     }
 
     public function testMultiplicion()
     {
         $resultado = (new \App\Http\Controllers\Controller)->multiplicion(4, 6);
-        $this->assertEquals(20, $resultado);
+        $this->assertEquals(24, $resultado);
     }
 
     public function testEsPositivo()
     {
-        $resultado = (new \App\Http\Controllers\Controller)->esPositivo(7);
+        $resultado = (new \App\Http\Controllers\Controller)->esPositivo(8);
         $this->assertTrue($resultado);
     }
 
